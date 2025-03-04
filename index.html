@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        
+        <title>Albert Einstein</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Albert Einstein</h1>
+        <div class="container">
+            <nav id="Navbar">
+                <a href="#" onclick="scrolltosection('Navbar')">Home</a>
+                <a href="#" onclick="scrolltosection('sidebar1')">About</a>
+                <a href="#" onclick="scrolltosection('sidebar2')">Publications</a>
+                <a href="#" onclick="scrolltosection('Hobbies')">Hobbies</a>
+                <a href="#" onclick="scrolltosection('image')">Images</a>
+                <a href="#" onclick="scrolltosection('footer')">Blogs</a>
+            </nav>
+            <div id="sidebar1">
+                <img src="Einstein image.jpeg" alt="Profile" width="150px">
+                <h2>Albert Einstein</h2>
+            </div>
+            <header>
+                <h1>About</h1>
+                <p>Albert Einstein was born at Ulm, in Württemberg, Germany, on March 14, 1879. Six weeks later the family moved to Munich, where he later on began his schooling at the Luitpold Gymnasium..... Read more about me at  
+                    <a href=" https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/">
+                    Albert Einstein-Biographical</a></p>
+            </header>
+            <div id="sidebar2">
+                <h2>Published Papers</h2>
+                <div class="paper">
+                    <img src="Einsteinpaper1.png" alt="paper1">
+                    <a href="https://einsteinpapers.press.princeton.edu/vol1-doc/" onclick="openLink(this.href);">The Early Years, 1879-1902</a>
+                </div>
+                <div class="paper">
+                    <img src="Einsteinpaper2.png" alt="paper2">
+                    <a href="https://einsteinpapers.press.princeton.edu/vol2-doc/" onclick="openLink(this.href);">The Swiss Years: Writings, 1900-1909</a>
+                </div>
+                <div class="paper">
+                    <img src="Einsteinpaper3.png" alt="paper3">
+                    <a href="https://einsteinpapers.press.princeton.edu/vol6-doc/" onclick="openLink(this.href);">The Berlin Years: Writings, 1914-1917</a>
+                </div>
+                <div class="paper">
+                    <img src="Einsteinpaper4.png" alt="paper4">
+                    <a href="https://einsteinpapers.press.princeton.edu/vol7-doc/" onclick="openLink(this.href);">The Berlin Years: Writings, 1918-1921</a>
+                    </div>
+                    <a id="Morepapers" href="https://einsteinpapers.press.princeton.edu/" onclick="openLink(this.href);">For More Papers.....</a>
+            </div>
+            <div id="Hobbies">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Solving Puzzles</li>
+                    <li>Reading Books about nature</li>
+                    <li>Playing Chess</li>
+                    <li>Playing Violin</li>
+                    
+                </ul>
+                <a id="Morepapers" href="https://www.quora.com/What-were-Einstein%E2%80%99s-hobbies" onclick="openLink(this.href);">  Want to know more about Albert Einstein Hobbies!!....</a>
+            </div>
+            <h1 id="image">My Images</h1>
+       
+            <div class="gallery">
+               
+                    <img src="image1.jpeg" alt="Image 1">
+                </a>
+            </div>
+            
+            <div class="gallery">
+              
+                    <img src="image2.jpeg" alt="Image 2">
+                </a>
+            </div>
+            
+            <div class="gallery">
+                
+                    <img src="image3.jpeg" alt="Image 3">
+                </a>
+            </div>
+            
+            <div class="gallery">
+               
+                    <img src="image4.jpeg" alt="Image 4">
+                </a>
+            </div>
+            
+            <div class="gallery">
+               
+                <img src="image5.jpeg" alt="Image 1">
+            </a>
+        </div>
+        
+        <div class="gallery">
+          
+                <img src="image6.jpeg" alt="Image 2">
+            </a>
+        </div>
+        
+        <div class="gallery">
+            
+                <img src="image7.jpeg" alt="Image 3">
+            </a>
+        </div>
+        
+        <div class="gallery">
+           
+                <img src="image8.jpeg" alt="Image 4">
+            </a>
+        </div>
+            
+            <section>
+                <h2>Blogs</h2>
+                <ul style="list-style-type:square;">
+                    <li><a href="https://abrilliantmind.blog/daily-rituals-of-scientists-albert-einstein/" onclick="openLink(this.href);">Daily rituals of scientists</a></li>
+                    <li><a href="https://www.themetaview.com/blog/2011/04/06/first-we-get-a-glimpse" onclick="openLink(this.href);">A Glimpse of the Eternal</a></li>
+                    <li><a href="http://imagine.gsfc.nasa.gov/" onclick="openLink(this.href);">Imagine the Universe!</a></li>
+                    <li><a href="http://www.superstringtheory.com/" onclick="openLink(this.href);">The official string theory website</a></li>
+                </ul>
+                <a id="Moreblogs" href="https://www.einstein-online.info/en/essentials/links/" onclick="openLink(this.href);">  Want to know more Albert Einstein Blogs!!....</a>
+            </section>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,234 @@
+:root{
+
+    --main-radius: 5px;
+    --main-padding:5px;
+    --blue: #1e90ff;
+    --white: #ffffff; 
+    --yellowish: #F7C600;
+}
+body{
+    background-color: whitesmoke;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+    "nav nav nav nav"
+    "sidebar1 header header header"
+    "sidebar2 sidebar2 sidebar2 sidebar2"
+    "content1 content1 content1 content1"
+    "content2 content2 content2 content2"
+    "content3 content3 content3 content3"
+    "content4 content4 content4 content4"
+    "section section section section";
+    grid-gap:0.8rem;
+    font-family: 'Noto Serif', serif;
+    font-weight: 800;
+    font-size: 1EM;
+    color: #fff;  
+}
+nav {
+    background: rgb(18, 18, 18);
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding: 4px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    justify-items: center; 
+    align-items: center; 
+    gap: 1rem; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: large;
+}
+
+
+h1{
+    text-align: center;
+   
+    font-weight: bolder;
+}
+#sidebar1{
+   background-color: #8fb8cb;
+   grid-area: sidebar1;
+   border-radius: var(--main-radius);
+   padding: var(--main-padding);
+   text-align: center;
+   align-items: center;
+   color: black;
+}
+#sidebar1 img{
+    width:9em;
+}
+header{
+    background: #8fb8cb;
+    grid-area: header;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    color: rgb(210, 30, 57);
+}
+header h1{
+    color: black;
+    
+}
+header a{
+    text-decoration:none;
+    
+}
+#sidebar2 {
+    background: #8fb8cb;
+    grid-area: sidebar2;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: black;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#sidebar2 .paper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+    margin-right: 50px;
+    
+}
+#sidebar2 img{
+    width: 120px;
+    
+}
+#Morepapers{
+    
+    font-size: large;
+    padding-left: 20px;
+}
+#Hobbies{
+    background-color: #8fb8cb;
+    grid-area: content1;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: rgb(193, 67, 86);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#Hobbies h2{
+    color: #282c2d;
+}
+
+#Hobbies ul {
+    display: flex;
+    justify-content: center; 
+    padding-left: 50px; 
+   
+    
+}
+#Hobbies a{
+    color: blue;
+}
+#Hobbies li { 
+    margin: 0 20px; 
+    font-family:sans-serif;
+    font-size: large;
+    
+}
+#image{
+    background-color: black;
+    grid-area: content2;
+    display: flex;
+    margin-top: 0;
+    text-align: center;
+    justify-content: center; 
+    padding-bottom: 5px; 
+    padding-top: 5px;
+    
+}
+.gallery {
+    float: left;
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: calc(25% - 10px); 
+    }
+
+.gallery img {
+    width: 435%;
+    height: 250px;
+}
+
+section{
+    background-color: #8fb8cb;
+    grid-area: section;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: #c841a6;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+section h2{
+    color: #282c2d;
+}
+
+section ul {
+    display: flex;
+    justify-content: center; 
+    padding-left: 50px; 
+}
+section li { 
+    margin: 0 20px; 
+    font-family:sans-serif;
+    font-size: large;
+}
+#Moreblogs{
+    color: orangered ;
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; 
+        grid-template-areas:
+            "nav"
+            "header"
+            "content1"
+            "content2"
+            "content3"
+            "content4"
+            "content5"
+            "content6"
+            "content7"
+            "content8"
+            "content9"
+            "content10"
+            "section";
+    }
+
+    #sidebar1 {
+        display: none;
+    }
+    #sidebar2 {
+        display: none;
+    }
+
+    .gallery {
+        width: calc(25% - 10px); 
+    }
+
+    #Hobbies ul {
+        
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    section ul {
+        padding-left: 0; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
