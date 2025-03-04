@@ -167,7 +167,7 @@ section{
     display: flex;
     align-items: center;
     padding-left: 10px;
-    color: #c841a6;
+    color: black;
     border-radius: var(--main-radius);
     padding: var(--main-padding);
 }
